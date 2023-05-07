@@ -1,0 +1,197 @@
+<div class="nav-bar">
+  <img src="../assets/logo.png" alt="" height="75" width="254">
+  <ul>
+    <div class="menu-item" [ngClass]="{
+              'menu-item-active': currentMenu ===0
+          }" (click)="currentMenu = 0">
+      <li>Home</li>
+      <div class="underline" *ngIf="currentMenu ===0"></div>
+    </div>
+    <div class="menu-item" [ngClass]="{
+              'menu-item-active': currentMenu ===1
+          }" (click)="currentMenu = 1">
+      <li>Service</li>
+      <div class="underline" *ngIf="currentMenu ===1"></div>
+
+    </div>
+    <div class="menu-item" [ngClass]="{
+              'menu-item-active': currentMenu ===2
+          }" (click)="currentMenu = 2">
+      <li>Contact Us</li>
+      <div class="underline" *ngIf="currentMenu ===2"></div>
+    </div>
+    <div class="menu-item" [ngClass]="{
+              'menu-item-active': currentMenu ===3
+          }" (click)="currentMenu = 3">
+      <li>Help</li>
+      <div class="underline" *ngIf="currentMenu ===3"></div>
+
+    </div>
+
+    <div class="menu-item" [ngClass]="{
+              'menu-item-active': currentMenu ===4
+          }" (click)="currentMenu = 4">
+      <li>Blogs</li>
+      <div class="underline" *ngIf="currentMenu ===4"></div>
+
+    </div>
+  </ul>
+
+  <div class="signup-login-buttons">
+    <button class="sign-up">Sign Up</button>
+    <button class="log-in">Log In</button>
+  </div>
+</div>
+<div class="hero">
+  <div class="hero-content">
+    <p>
+      <span class="normal-font">
+        Providing Quality
+      </span>
+      <span class="green-font">
+        Healthcare
+      </span>
+      <span class="normal-font">
+        For A
+      </span>
+      <span class="lime-green-font">
+        Brighter
+      </span>
+      <span class="normal-font">
+        And
+      </span>
+      <span class="lime-green-font">
+        Healthy
+      </span>
+      <span class="normal-font">
+        Future
+      </span>
+    </p>
+    <div class="here-appointment-contents">
+      <p class="hero-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique maiores adipisci
+        id placeat quasi libero
+        soluta sapiente consequuntur ipsa quibusdam aperiam doloremque consectetur, enim, deserunt, perspiciatis nobis
+        dignissimos pariatur. Blanditiis in rerum odio commodi ullam corporis aut nostrum maiores tenetur.
+      </p>
+      <div class="appointment-watch-video">
+        <button class="log-in">Appointments</button>
+        <div class="watch-video">
+          <div class="pause-play">
+            <div class="pause-icon"></div>
+          </div>
+          <p>Watch Video</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img class="hero-image" src="../assets/doctor.png" alt="">
+</div>
+<div class="main-container">
+  <div class="find-a-doctor">
+    <h3>Find A Doctor</h3>
+    <div class="doctor-information">
+      <div class="doctor-inputs">
+        <input type="text" [placeholder]="'Name'">
+        <input type="text" [placeholder]="'Speciality'">
+      </div>
+      <div class="availability">
+        <p>Available</p>
+        <div class="toggle-button">
+          <div [ngClass]="{
+                          'toggle-symbol-active': toggleIndex == 0,
+                          'toggle-symbol': toggleIndex == 1
+
+                      }" (click)="changeToggleIndex(1)"></div>
+          <div [ngClass]="{
+                          'toggle-symbol-active': toggleIndex == 1,
+                          'toggle-symbol': toggleIndex == 0
+                      }" (click)="changeToggleIndex(0)"></div>
+        </div>
+      </div>
+      <button>Search</button>
+    </div>
+  </div>
+  <div class="our-results">
+    <h2 class="our-results-title"> Our results in numbers</h2>
+    <div class="shoow-results">
+      <div class="our-results-content">
+        <div class="result">99<span class="percentile">%</span></div>
+        <h3>Customer satisfaction</h3>
+      </div>
+      <div class="our-results-content">
+        <div class="result">15<span class="percentile">k</span></div>
+        <h3>Online Pateints</h3>
+      </div>
+      <div class="our-results-content">
+        <div class="result">12<span class="percentile">k</span></div>
+        <h3>Pateints Recovered</h3>
+      </div>
+      <div class="our-results-content">
+        <div class="result">240<span class="percentile">%</span></div>
+        <h3>Company Growth</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="choose-doctor">
+    <div class="reason-to-choose">
+      <h2>You have lots of reasons to choose us</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit vitae perspiciatis corrupti
+        ipsam.</p>
+      <div class="get-start-sales-buttons">
+        <button class="first-button">Get Started</button>
+        <button class="second-button">Talk to sales</button>
+
+      </div>
+    </div>
+
+    <img class="image-container" src="../assets/1.jpg" alt="">
+
+
+  </div>
+
+  <div class="services-we-provide our-results">
+    <h2 class="our-results-title">Services we provide</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo distinctio explicabo quis, earum optio
+      facere voluptatem cupiditate fuga nobis similique velit quam obcaecati autem assumenda modi.</p>
+  </div>
+
+  <div class="service-cards">
+    <div class="service-card">
+      <div class="card-image"></div>
+      <h3 class="service-card-title">Bones Treatment</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, ipsa ducimus quae cupiditate dolor sapiente
+        perferendis rerum numquam accusamus amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
+        voluptatum aperiam cum, similique labore ducimus earum consequuntur, sint id ipsum, deleniti dolores officia
+        ad voluptates suscipit vel quo nobis dignissimos!</p>
+      <h4>Learn more</h4>
+    </div>
+    <div class="service-card">
+      <div class="card-image"></div>
+      <h3 class="service-card-title">Bones Treatment</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, ipsa ducimus quae cupiditate dolor sapiente
+        perferendis rerum numquam accusamus amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
+        voluptatum aperiam cum, similique labore ducimus earum consequuntur, sint id ipsum, deleniti dolores officia
+        ad voluptates suscipit vel quo nobis dignissimos!</p>
+      <h4>Learn more</h4>
+    </div>
+    <div class="service-card">
+      <div class="card-image"></div>
+      <h3 class="service-card-title">Bones Treatment</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, ipsa ducimus quae cupiditate dolor sapiente
+        perferendis rerum numquam accusamus amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
+        voluptatum aperiam cum, similique labore ducimus earum consequuntur, sint id ipsum, deleniti dolores officia
+        ad voluptates suscipit vel quo nobis dignissimos!</p>
+      <h4>Learn more</h4>
+    </div>
+    <div class="service-card">
+      <div class="card-image"></div>
+      <h3 class="service-card-title">Bones Treatment</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, ipsa ducimus quae cupiditate dolor sapiente
+        perferendis rerum numquam accusamus amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
+        voluptatum aperiam cum, similique labore ducimus earum consequuntur, sint id ipsum, deleniti dolores officia
+        ad voluptates suscipit vel quo nobis dignissimos!</p>
+      <h4>Learn more</h4>
+    </div>
+  </div>
+</div>
